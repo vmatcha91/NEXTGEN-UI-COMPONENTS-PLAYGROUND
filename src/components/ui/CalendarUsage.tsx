@@ -58,7 +58,7 @@ const JoyField = React.forwardRef(
       ...other
     } = props;
 
-    console.log({ disabled });
+    console.log({ slotProps, other, disabled });
     return (
       <FormControl
         disabled={disabled}
@@ -116,7 +116,7 @@ const JoyDateField = React.forwardRef(
     });
 
     /* If you don't need a clear button, you can skip the use of this hook */
-    const processedFieldProps = useClearableField({
+    const { disabled, ...processedFieldProps } = useClearableField({
       ...fieldResponse,
       slots,
       slotProps,

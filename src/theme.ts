@@ -21,11 +21,11 @@ declare module "@mui/joy/styles" {
 const paletteConfig = (paletteType) => ({
   //Outline
   outlinedActiveBg: `var(--joy-palette-${paletteType}-500)`,
-  outlinedBorder: `var(--joy-palette-${paletteType}-500)`,
+  outlinedBorder: `var(--joy-palette-${paletteType}-400)`,
   outlinedColor: `var(--joy-palette-common-black)`,
-  outlinedDisabledBorder: "var(--joy-palette-neutral-400)",
-  outlinedDisabledColor: "var(--joy-palette-neutral-50)",
-  outlinedHoverBg: "var(--joy-palette-neutral-200)",
+  outlinedDisabledBorder: `var(--joy-palette-neutral-400)`,
+  outlinedDisabledColor: `var(--joy-palette-neutral-50)`,
+  outlinedHoverBg: `var(--joy-palette-neutral-100)`,
   outlineHoverBorder: `var(--joy-palette-${paletteType}-500)`,
   //plain
   plainActiveBg: `var(--joy-palette-${paletteType}-100)`,
@@ -50,17 +50,30 @@ const paletteConfig = (paletteType) => ({
 });
 
 const theme = extendTheme({
+  fontWeight: {
+    lg: 600,
+    md: 400,
+    sm: 300,
+    xl: 700,
+  },
+
+  radius: {
+    lg: "8px",
+    md: "5px",
+    sm: "4px",
+  },
+
   shadow: {
-    //xl: "0px 20px 24px rgba( 0, 0, 0, 0.15)",
-    lg: "0px 12px 16px rgba( 0, 0, 0, 0.15)",
-    md: "0px 6px 12px rgba( 0, 0, 0, 0.15)",
-    sm: "0px 2px 4px rgba( 0, 0, 0, 0.15)",
+    lg: "0px 12px 16px rgba(0, 0, 0, 0.15)",
+    md: "0px 6px 12px rgba(0, 0, 0, 0.15)",
+    sm: "0px 2px 4px rgba(0, 0, 0, 0.15)",
+    xl: "0px 20px 24px rgba(0, 0, 0, 0.15)",
   },
   colorSchemes: {
     light: {
       palette: {
         background: {
-          body: "#EBEBEB",
+          body: "#f5f5f5",
           surface: "#fff",
         },
         common: {
@@ -80,6 +93,7 @@ const theme = extendTheme({
           900: "#330000",
           ...paletteConfig("danger"),
         },
+        divider: "#ccc",
         primary: {
           100: "#BDF9FF",
           200: "#80F4FF",
@@ -127,11 +141,11 @@ const theme = extendTheme({
         },
 
         neutral: {
+          50: "#F2F2F2",
           100: "#E3E3E3",
           200: "#C9C9C9",
           300: "#ADADAD",
           400: "#919191",
-          50: "#F2F2F2",
           500: "#767676",
           600: "#5E5E5E",
           700: "#474747",
@@ -166,9 +180,6 @@ const theme = extendTheme({
           ...paletteConfig("warning2"),
         },
       },
-    },
-    dark: {
-      palette: {},
     },
   },
 });
