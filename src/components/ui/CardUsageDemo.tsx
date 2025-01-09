@@ -4,8 +4,8 @@ import Button from "@mui/joy/Button";
 import Card from "@mui/joy/Card";
 import Typography from "@mui/joy/Typography";
 import { CardActions, CardContent, Sheet } from "@mui/joy";
-import JoyUsageDemo from "../JoyUsageDemo";
-import DemoCanvasBase from "../DemoCanvasBase";
+import JoyUsageDemo from "../JoyUsageDemo.tsx";
+import DemoCanvasBase from "../DemoCanvasBase.tsx";
 
 export default function CardUsage({ elemId }) {
   return (

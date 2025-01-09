@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import JoyUsageDemo, { prependLinesSpace } from "../JoyUsageDemo";
+import JoyUsageDemo, { prependLinesSpace } from "../JoyUsageDemo.tsx";
 
 import { ClickAwayListener } from "@mui/base/ClickAwayListener";
 import { Popper } from "@mui/base/Popper";
@@ -18,7 +18,7 @@ import ListItem from "@mui/joy/ListItem";
 import ListItemButton from "@mui/joy/ListItemButton";
 import ListItemContent from "@mui/joy/ListItemContent";
 import ListItemDecorator from "@mui/joy/ListItemDecorator";
-import DemoCanvasBase from "../DemoCanvasBase";
+import DemoCanvasBase from "../DemoCanvasBase.tsx";
 import { Box } from "@mui/joy";
 
 export default function TabsUsage({ elemId }) {

@@ -3,8 +3,8 @@ import Box from "@mui/joy/Box";
 import Button from "@mui/joy/Button";
 import IconButton from "@mui/joy/IconButton";
 import FavoriteBorder from "@mui/icons-material/FavoriteBorder";
-import JoyUsageDemo from "../JoyUsageDemo";
-import DemoCanvasBase from "../DemoCanvasBase";
+import JoyUsageDemo from "../JoyUsageDemo.tsx";
+import DemoCanvasBase from "../DemoCanvasBase.tsx";
 
 export default function ButtonUsage({ elemId }) {
   return (

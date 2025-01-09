@@ -1,8 +1,8 @@
 import * as React from "react";
 import Chip from "@mui/joy/Chip";
-import JoyUsageDemo from "../JoyUsageDemo";
+import JoyUsageDemo from "../JoyUsageDemo.tsx";
 import { Sheet } from "@mui/joy";
-import DemoCanvasBase from "../DemoCanvasBase";
+import DemoCanvasBase from "../DemoCanvasBase.tsx";
 
 export default function ChipUsage({ elemId }) {
   return (

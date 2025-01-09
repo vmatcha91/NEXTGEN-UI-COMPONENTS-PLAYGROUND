@@ -1,7 +1,7 @@
 import * as React from "react";
 import Input from "@mui/joy/Input";
-import JoyUsageDemo from "../JoyUsageDemo";
-import DemoCanvasBase from "../DemoCanvasBase";
+import JoyUsageDemo from "../JoyUsageDemo.tsx";
+import DemoCanvasBase from "../DemoCanvasBase.tsx";
 
 export default function InputUsage({ elemId }) {
   return (

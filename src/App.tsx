@@ -16,24 +16,24 @@ import {
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 
-import Sidebar from "./components/Sidebar";
-import Header from "./components/Header";
-import joyTheme from "./theme";
-import CheckboxUsage from "./components/ui/CheckBoxUsage";
-import CardUsage from "./components/ui/CardUsageDemo";
-import SelectUsage from "./components/ui/SelectUsage";
-import ChipUsage from "./components/ui/ChipUsage";
-import TooltipUsage from "./components/ui/TooltipUsage";
-import ButtonUsage from "./components/ui/ButtonUsage";
-import InputUsage from "./components/ui/InputUsage";
-import ModalUsage from "./components/ui/ModalUsage";
-import MenuUsage from "./components/ui/MenuUsage";
-import ListUsage from "./components/ui/ListUsage";
-import ShadowUsage from "./components/ui/ShadowUsage";
-import TabsUsage from "./components/ui/TabsUsage";
-import TableUsage from "./components/ui/TableUsage";
-import CalendarUsage from "./components/ui/CalendarUsage";
-import appMaterialTheme from "./material-theme";
+import Sidebar from "./components/Sidebar.tsx";
+import Header from "./components/Header.tsx";
+import joyTheme from "./theme.ts";
+import CheckboxUsage from "./components/ui/CheckBoxUsage.tsx";
+import CardUsage from "./components/ui/CardUsageDemo.tsx";
+import SelectUsage from "./components/ui/SelectUsage.tsx";
+import ChipUsage from "./components/ui/ChipUsage.tsx";
+import TooltipUsage from "./components/ui/TooltipUsage.tsx";
+import ButtonUsage from "./components/ui/ButtonUsage.tsx";
+import InputUsage from "./components/ui/InputUsage.tsx";
+import ModalUsage from "./components/ui/ModalUsage.tsx";
+import MenuUsage from "./components/ui/MenuUsage.tsx";
+import ListUsage from "./components/ui/ListUsage.tsx";
+import ShadowUsage from "./components/ui/ShadowUsage.tsx";
+import TabsUsage from "./components/ui/TabsUsage.tsx";
+import TableUsage from "./components/ui/TableUsage.tsx";
+import CalendarUsage from "./components/ui/CalendarUsage.tsx";
+import appMaterialTheme from "./material-theme.ts";
 
 export default function JoyOrderDashboardTemplate() {
   return (

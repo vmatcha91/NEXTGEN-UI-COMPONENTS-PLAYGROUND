@@ -7,8 +7,8 @@ import ListItemButton from "@mui/joy/ListItemButton";
 import HomeRoundedIcon from "@mui/icons-material/HomeRounded";
 import ShoppingCartRoundedIcon from "@mui/icons-material/ShoppingCartRounded";
 import KeyboardArrowRight from "@mui/icons-material/KeyboardArrowRight";
-import JoyUsageDemo, { prependLinesSpace } from "../JoyUsageDemo";
-import DemoCanvasBase from "../DemoCanvasBase";
+import JoyUsageDemo, { prependLinesSpace } from "../JoyUsageDemo.tsx";
+import DemoCanvasBase from "../DemoCanvasBase.tsx";
 
 export default function ListUsage({ elemId }) {
   return (

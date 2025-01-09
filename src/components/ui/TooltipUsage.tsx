@@ -2,9 +2,8 @@ import * as React from "react";
 import DeleteIcon from "@mui/icons-material/Delete";
 import IconButton from "@mui/joy/IconButton";
 import Tooltip from "@mui/joy/Tooltip";
-import JoyUsageDemo from "../JoyUsageDemo";
-import { Sheet } from "@mui/joy";
-import DemoCanvasBase from "../DemoCanvasBase";
+import JoyUsageDemo from "../JoyUsageDemo.tsx";
+import DemoCanvasBase from "../DemoCanvasBase.tsx";
 
 export default function TooltipUsage({ elemId }) {
   return (

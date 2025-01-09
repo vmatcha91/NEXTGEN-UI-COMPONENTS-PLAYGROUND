@@ -5,8 +5,8 @@ import ModalClose from "@mui/joy/ModalClose";
 import ModalDialog from "@mui/joy/ModalDialog";
 import DialogTitle from "@mui/joy/DialogTitle";
 import DialogContent from "@mui/joy/DialogContent";
-import JoyUsageDemo, { prependLinesSpace } from "../JoyUsageDemo";
-import DemoCanvasBase from "../DemoCanvasBase";
+import JoyUsageDemo, { prependLinesSpace } from "../JoyUsageDemo.tsx";
+import DemoCanvasBase from "../DemoCanvasBase.tsx";
 
 export default function ModalUsage({ elemId }) {
   const [open, setOpen] = React.useState(false);

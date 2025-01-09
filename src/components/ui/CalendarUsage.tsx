@@ -16,8 +16,8 @@ import {
   DateValidationError,
   FieldSection,
 } from "@mui/x-date-pickers/models";
-import JoyUsageDemo from "../JoyUsageDemo";
-import DemoCanvasBase from "../DemoCanvasBase";
+import JoyUsageDemo from "../JoyUsageDemo.tsx";
+import DemoCanvasBase from "../DemoCanvasBase.tsx";
 
 interface JoyFieldProps extends InputProps {
   label?: React.ReactNode;

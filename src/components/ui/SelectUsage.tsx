@@ -1,9 +1,8 @@
 import * as React from "react";
 import Select from "@mui/joy/Select";
 import Option from "@mui/joy/Option";
-import JoyUsageDemo from "../JoyUsageDemo";
-import { Sheet } from "@mui/joy";
-import DemoCanvasBase from "../DemoCanvasBase";
+import JoyUsageDemo from "../JoyUsageDemo.tsx";
+import DemoCanvasBase from "../DemoCanvasBase.tsx";
 
 export default function SelectUsage({ elemId }) {
   const [value, setValue] = React.useState(null);

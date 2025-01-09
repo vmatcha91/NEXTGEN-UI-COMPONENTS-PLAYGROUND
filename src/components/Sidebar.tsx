@@ -15,8 +15,8 @@ import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
 import LogoutRoundedIcon from "@mui/icons-material/LogoutRounded";
 import BrightnessAutoRoundedIcon from "@mui/icons-material/BrightnessAutoRounded";
 
-import ColorSchemeToggle from "./ColorSchemeToggle";
-import { closeSidebar } from "../utils";
+import ColorSchemeToggle from "./ColorSchemeToggle.tsx";
+import { closeSidebar } from "../utils.ts";
 
 // function Toggler({
 //   defaultExpanded = false,

@@ -1,8 +1,7 @@
 import { Box, Grid } from "@mui/joy";
 import * as React from "react";
-import DemoCanvasBase from "../DemoCanvasBase";
-
-import JoyUsageDemo, { prependLinesSpace } from "../JoyUsageDemo";
+import DemoCanvasBase from "../DemoCanvasBase.tsx";
+import JoyUsageDemo, { prependLinesSpace } from "../JoyUsageDemo.tsx";
 
 export default function ShadowUsage({ elemId }) {
   return (

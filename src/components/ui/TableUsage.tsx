@@ -3,8 +3,8 @@ import Box from "@mui/joy/Box";
 import Table from "@mui/joy/Table";
 import Sheet from "@mui/joy/Sheet";
 import Typography from "@mui/joy/Typography";
-import JoyUsageDemo from "../JoyUsageDemo";
-import DemoCanvasBase from "../DemoCanvasBase";
+import JoyUsageDemo from "../JoyUsageDemo.tsx";
+import DemoCanvasBase from "../DemoCanvasBase.tsx";
 
 export default function TableUsage({ elemId }) {
   return (
