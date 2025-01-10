@@ -7,30 +7,34 @@ declare module "@mui/joy/styles" {
 }
 
 const paletteConfig = (paletteType) => ({
-  outlinedActiveBg: `var(--joy-palette-${paletteType}-500)`,
-  outlinedBorder: `var(--joy-palette-${paletteType}-500)`,
-  outlinedColor: `var(--joy-palette-neutral-400, #FFFFFF)`,
-  outlinedDisabledBorder: `var(--joy-palette-neutral-400)`,
-  outlinedDisabledColor: `var(--joy-palette-neutral-50)`,
+  outlinedActiveBg: `var(--joy-palette-${paletteType}-200)`,
+  outlinedBorder: `var(--joy-palette-${paletteType}-300)`,
+  outlinedColor: `var(--joy-palette-${paletteType}-500, #FFFFFF)`,
+  outlinedDisabledBorder: `var(--joy-palette-neutral-200)`,
+  outlinedDisabledColor: `var(--joy-palette-neutral-400)`,
   outlinedHoverBg: `var(--joy-palette-neutral-200)`,
+  //Revist
   outlinedHoverBorder: `var(--joy-palette-${paletteType}-500)`,
-  plainActiveBg: `var(--joy-palette-neutral-500)`,
-  plainColor: `var(--joy-palette-common-black, #FFFFFF)`,
+  //Revisit
+
+  plainActiveBg: `var(--joy-palette-${paletteType}-200)`,
+  plainColor: `var(--joy-palette-${paletteType}-500, #FFFFFF)`,
   plainDisabledColor: `var(--joy-palette-neutral-400)`,
   plainHoverBg: `var(--joy-palette-${paletteType}-100)`,
+
   softActiveBg: `var(--joy-palette-${paletteType}-300)`,
-  softBg: `var(--joy-palette-${paletteType}-50)`,
-  softColor: `var(--joy-palette-neutral-1000, #000000)`,
-  softDisabledBg: `var(--joy-palette-neutral-400)`,
-  softDisabledColor: "var(--joy-palette-neutral-600)",
+  softBg: `var(--joy-palette-${paletteType}-100)`,
+  softColor: `var(--joy-palette-${paletteType}-700, #000000)`,
+  softDisabledBg: `var(--joy-palette-neutral-50)`,
+  softDisabledColor: "var(--joy-palette-neutral-400)",
   softHoverBg: `var(--joy-palette-${paletteType}-200)`,
 
   solidActiveBg: `var(--joy-palette-${paletteType}-700)`,
   solidBg: `var(--joy-palette-${paletteType}-500)`,
   solidColor: "var(--joy-palette-common-white, #FFF)",
-  solidDisabledBg: "var(--joy-palette-neutral-400)",
-  solidDisabledColor: "var(--joy-palette-neutral-900)",
-  solidHoverBg: `var(--joy-palette-${paletteType}-300)`,
+  solidDisabledBg: "var(--joy-palette-neutral-100)",
+  solidDisabledColor: "var(--joy-palette-neutral-400)",
+  solidHoverBg: `var(--joy-palette-${paletteType}-600)`,
 });
 
 const theme = extendTheme({
