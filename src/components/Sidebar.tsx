@@ -84,6 +84,10 @@ const listOfComponents = [
     navLink: "modal-id",
   },
   {
+    name: "Secondary tabs",
+    navLink: "secondarytabs-id",
+  },
+  {
     name: "Select",
     navLink: "select-id",
   },
@@ -95,11 +99,13 @@ const listOfComponents = [
     name: "Tooltip",
     navLink: "tooltip-id",
   },
-
   {
     name: "Tab",
     navLink: "tab-id",
-  },
+  },{
+    name: 'Table',
+    navLink: "table-id"
+  }
 ];
 
 export default function Sidebar() {

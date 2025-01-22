@@ -34,6 +34,7 @@ import TabsUsage from "./components/ui/TabsUsage.tsx";
 import TableUsage from "./components/ui/TableUsage.tsx";
 import CalendarUsage from "./components/ui/CalendarUsage.tsx";
 import appMaterialTheme from "./material-theme.ts";
+import SecondaryTabs from "./components/ui/SecondaryTabs.tsx";
 
 export default function JoyOrderDashboardTemplate() {
   return (
@@ -60,6 +61,7 @@ export default function JoyOrderDashboardTemplate() {
               <ListUsage elemId={"list-id"} />
               <MenuUsage elemId={"menu-id"} />
               <ModalUsage elemId="modal-id" />
+              <SecondaryTabs elemId={"secondarytabs-id"} />
               <SelectUsage elemId="select-id" />
               <ShadowUsage elemId={"shadow-id"} />
               <TooltipUsage elemId={"tooltip-id"} />

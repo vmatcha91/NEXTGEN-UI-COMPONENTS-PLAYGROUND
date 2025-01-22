@@ -1,3 +1,4 @@
+import { inputClasses, tabClasses, textareaClasses } from "@mui/joy";
 import { extendTheme, PaletteRange } from "@mui/joy/styles";
 
 declare module "@mui/joy/styles" {
@@ -50,12 +51,6 @@ const paletteConfig = (paletteType) => ({
 });
 
 const theme = extendTheme({
-  shadow: {
-    //xl: "0px 20px 24px rgba( 0, 0, 0, 0.15)",
-    lg: "0px 12px 16px rgba( 0, 0, 0, 0.15)",
-    md: "0px 6px 12px rgba( 0, 0, 0, 0.15)",
-    sm: "0px 2px 4px rgba( 0, 0, 0, 0.15)",
-  },
   colorSchemes: {
     light: {
       palette: {
@@ -170,6 +165,138 @@ const theme = extendTheme({
     dark: {
       palette: {},
     },
+  },
+  components: {
+    JoyAutocomplete: {
+      defaultProps: {
+        size: "md",
+      },
+      styleOverrides: {
+        root: ({ theme }) => ({
+          // '--_Chip-paddingBlock': '0.5rem',
+          "--Autocomplete-wrapperGap": "0.375rem",
+        }),
+      },
+    },
+    JoyInput: {
+      styleOverrides: {
+        root: ({ ownerState, theme }) => ({
+          "--Input-minHeight": "2.5rem",
+          [`&.${inputClasses.disabled}`]: {
+            color: "var(--joy-palette-neutral-200)",
+          },
+          ...(ownerState.type === "color" && {
+            [`& input[type="color"]`]: {
+              maxWidth: "2.5rem",
+              width: "2.5rem",
+            },
+            display: "flex",
+            justifyContent: "flex-end",
+          }),
+        }),
+      },
+    },
+    JoyList: {
+      styleOverrides: {
+        root: ({ theme }) => ({
+          "--ListItem-minHeight": "2.5rem",
+        }),
+      },
+    },
+    JoySelect: {
+      styleOverrides: {
+        root: ({ theme }) => ({
+          "--Select-minHeight": "2.5rem",
+        }),
+      },
+    },
+    JoySkeleton: {
+      defaultProps: {
+        variant: "circular",
+      },
+    },
+    JoyTab: {
+      styleOverrides: {
+        root: ({ ownerState, theme }) => {
+          const colorVariant = ownerState.color
+          return ({
+          "--Tab-indicatorRadius": "2px",
+          "--Tab-indicatorThickness": "4px",
+          /* @ts-ignore */
+          color: `${theme.vars.palette?.[colorVariant]?.[500]}`,
+        })},
+      },
+    },
+    JoyTabList: {
+      styleOverrides: {
+        root: ({ ownerState, theme }) =>   ({ 
+          [`& .${tabClasses.root}`]: {
+            backgroundColor: "transparent",
+            borderRadius: theme.vars.radius.md
+          },
+        }),
+      },
+    },
+    JoyTable: {
+      styleOverrides: {
+        root: ({ theme }) => ({
+          "--Table-headerUnderlineThickness": "1px",
+          "--TableCell-footBackground": `${theme.palette.background.surface}`,
+          "--TableCell-height": "4.5rem",
+          "--TableCell-paddingX": "1.5rem",
+          fontSize: "1rem",
+          maxHeight: "5rem",
+          backgroundColor: 'transparent !important'
+        }),
+      },
+    },
+    JoyTabs: {
+      styleOverrides: {
+        root: ({ theme }) => ({
+          "--Tab-minHeight": "2.5rem",
+        }),
+      },
+    },
+    JoyTextarea: {
+      styleOverrides: {
+        root: ({ theme }) => ({
+          [`&.${textareaClasses.disabled}`]: {
+            color: "var(--joy-palette-neutral-200)",
+          },
+        }),
+      },
+    },
+    JoyTypography: {
+      defaultProps: {
+        color: "neutral",
+        fontWeight: "normal",
+        level: "body-md",
+        variant: "plain",
+      },
+    },
+  },
+  fontFamily: {
+    body: "Avenir, var(--joy-fontFamily-fallback)",
+    display: "Avenir, var(--joy-fontFamily-fallback)",
+  },
+  fontWeight: {
+    lg: 600,
+    md: 400,
+    sm: 300,
+    xl: 700,
+  },
+
+  radius: {
+    lg: "8px",
+    md: "5px",
+    sm: "4px",
+  },
+
+  shadow: {
+    lg: "0px 12px 16px rgba(0, 0, 0, 0.15)",
+    md: "0px 6px 12px rgba(0, 0, 0, 0.15)",
+    sm: "0px 2px 4px rgba(0, 0, 0, 0.15)",
+    xl: "0px 20px 24px rgba(0, 0, 0, 0.15)",
   },
 });
 

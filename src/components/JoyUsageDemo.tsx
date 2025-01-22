@@ -157,7 +157,7 @@ interface JoyUsageDemoProps<ComponentProps> {
      *
      * To make it appears in the code block, specified `codeBlockDisplay: true`
      */
-    defaultValue?: string | number | boolean;
+    defaultValue?: string | number | boolean | Function;
     /**
      * If not specify (`undefined`), the prop displays when user change the value
      * If `true`, the prop with defaultValue will always display in the code block.
