@@ -53,18 +53,18 @@ export default function JoyOrderDashboardTemplate() {
             >
               <ButtonUsage elemId={"button-id"} />
               <CheckboxUsage elemId="checkbox-id" />
+              <CalendarUsage elemId={"calendar-id"} />
               <CardUsage elemId="card-id" />
               <ChipUsage elemId={"chip-id"} />
               <InputUsage elemId={"input-id"} />
+              <ListUsage elemId={"list-id"} />
+              <MenuUsage elemId={"menu-id"} />
               <ModalUsage elemId="modal-id" />
               <SelectUsage elemId="select-id" />
-              <TooltipUsage elemId={"tooltip-id"} />
-              <MenuUsage elemId={"menu-id"} />
-              <ListUsage elemId={"list-id"} />
               <ShadowUsage elemId={"shadow-id"} />
+              <TooltipUsage elemId={"tooltip-id"} />
               <TabsUsage elemId={"tab-id"} />
               <TableUsage elemId={"table-id"} />
-              <CalendarUsage elemId={"calendar-id"} />
             </Box>
           </Box>
         </LocalizationProvider>

@@ -64,8 +64,20 @@ const listOfComponents = [
     navLink: "card-id",
   },
   {
+    name: "Calendar",
+    navLink: "calendar-id",
+  },
+  {
     name: "Input",
     navLink: "input-id",
+  },
+  {
+    name: "List",
+    navLink: "list-id",
+  },
+  {
+    name: "Menu",
+    navLink: "menu-id",
   },
   {
     name: "Modal",
@@ -76,28 +88,17 @@ const listOfComponents = [
     navLink: "select-id",
   },
   {
-    name: "Tooltip",
-    navLink: "tooltip-id",
-  },
-  {
-    name: "Menu",
-    navLink: "menu-id",
-  },
-  {
-    name: "List",
-    navLink: "list-id",
-  },
-  {
     name: "Shadow",
     navLink: "shadow-id",
   },
   {
+    name: "Tooltip",
+    navLink: "tooltip-id",
+  },
+
+  {
     name: "Tab",
     navLink: "tab-id",
-  },
-  {
-    name: "Calendar",
-    navLink: "calendar-id",
   },
 ];
 
