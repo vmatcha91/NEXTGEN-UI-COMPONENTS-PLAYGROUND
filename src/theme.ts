@@ -218,21 +218,22 @@ const theme = extendTheme({
     JoyTab: {
       styleOverrides: {
         root: ({ ownerState, theme }) => {
-          const colorVariant = ownerState.color
-          return ({
-          "--Tab-indicatorRadius": "2px",
-          "--Tab-indicatorThickness": "4px",
-          /* @ts-ignore */
-          color: `${theme.vars.palette?.[colorVariant]?.[500]}`,
-        })},
+          const colorVariant = ownerState.color;
+          return {
+            "--Tab-indicatorRadius": "2px",
+            "--Tab-indicatorThickness": "4px",
+            /* @ts-ignore */
+            color: `${theme.vars.palette?.[colorVariant]?.[500]}`,
+          };
+        },
       },
     },
     JoyTabList: {
       styleOverrides: {
-        root: ({ ownerState, theme }) =>   ({ 
+        root: ({ ownerState, theme }) => ({
           [`& .${tabClasses.root}`]: {
             backgroundColor: "transparent",
-            borderRadius: theme.vars.radius.md
+            borderRadius: theme.vars.radius.md,
           },
         }),
       },
@@ -246,7 +247,7 @@ const theme = extendTheme({
           "--TableCell-paddingX": "1.5rem",
           fontSize: "1rem",
           maxHeight: "5rem",
-          backgroundColor: 'transparent !important'
+          backgroundColor: "transparent",
         }),
       },
     },
